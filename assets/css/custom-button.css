@@ -1,0 +1,74 @@
+.enter-wrapper {
+  margin-top: 2.5rem;
+}
+
+/* Core button */
+.atlas-enter-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #F4EFE6;
+  background: linear-gradient(145deg, #7A0F19, #5A0B12);
+  border: 2px solid #C6A84B;
+  border-radius: 6px;
+  position: relative;
+  text-decoration: none;
+  box-shadow:
+    0 0 0 1px rgba(198,168,75,0.4),
+    0 6px 18px rgba(0,0,0,0.45);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+/* Subtle inner glow */
+.atlas-enter-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(198,168,75,0.25), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Gold shimmer sweep */
+.atlas-enter-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+/* Hover state */
+.atlas-enter-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(145deg, #8A1F5C, #7A0F19);
+  box-shadow:
+    0 0 0 1px rgba(198,168,75,0.7),
+    0 12px 28px rgba(0,0,0,0.6);
+}
+
+.atlas-enter-btn:hover::before {
+  opacity: 1;
+}
+
+.atlas-enter-btn:hover::after {
+  left: 140%;
+}
+
+/* Active click */
+.atlas-enter-btn:active {
+  transform: scale(0.96);
+}
