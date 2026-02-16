@@ -4,5 +4,12 @@ title: Atlas Home
 subtitle: StoneBound Fate campaign reference
 ---
 
-Welcome to Aartheis Atlas.
-<p><a href="{{ site.baseurl }}/atlas/">Enter the Atlas →</a></p>
+<ul>
+  <li><a href="{{ site.baseurl }}/atlas/sessions">Sessions</a></li>
+  <li><a href="{{ site.baseurl }}/atlas/loose-ends">Loose Ends</a></li>
+  <li><a href="{{ site.baseurl }}/atlas/npcs">NPCs</a></li>
+  <li><a href="{{ site.baseurl }}/atlas/locations">Locations</a></li>
+  <li><a href="{{ site.baseurl }}/atlas/factions">Factions</a></li>
+  <li><a href="{{ site.baseurl }}/atlas/rules">Rules</a></li>
+</ul>
+
