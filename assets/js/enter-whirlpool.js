@@ -1,8 +1,10 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   const btn = document.querySelector('[data-enter-whirlpool]');
   if (!btn) return;
 
-  const target = btn.getAttribute('data-target') || (window.siteBaseurl ? `${window.siteBaseurl}/atlas/` : '/atlas/');
+  const target =
+    btn.getAttribute('data-target') ||
+    `${window.location.origin}${(document.body.getAttribute('data-baseurl') || '')}/atlas/`;
 
   // Build overlay once
   const overlay = document.createElement('div');
@@ -19,7 +21,6 @@
   btn.addEventListener('click', function (e) {
     e.preventDefault();
 
-    // If user prefers reduced motion, skip animation
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) {
       window.location.href = target;
@@ -28,9 +29,8 @@
 
     overlay.classList.add('is-active');
 
-    // Navigate after animation plays
     window.setTimeout(() => {
       window.location.href = target;
     }, 720);
   });
-})();
+});
