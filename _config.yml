@@ -59,20 +59,21 @@ post_search: true
 
 # --- Colour Scheme --- #
 
-navbar-col: "#3B1B3F"
-navbar-text-col: "#FFFFFF"
-navbar-children-col: "#FFF5FA"
-navbar-border-col: "#2A0F2E"
+navbar-col: "#5A0B12"
+navbar-text-col: "#F4EFE6"
+navbar-children-col: "#7A0F19"
+navbar-border-col: "#A8841E"
 
-page-col: "#FFFDFE"
-text-col: "#2F2F33"
+page-col: "#F4EFE6"
+text-col: "#1F1A17"
 
-link-col: "#0F52BA"
-hover-col: "#8A1F5C"
+link-col: "#7A0F19"
+hover-col: "#C6A84B"
 
-footer-col: "#F3EEF4"
-footer-text-col: "#555555"
-footer-link-col: "#2F2F33"
+footer-col: "#14110F"
+footer-text-col: "#E8DDC8"
+footer-link-col: "#C6A84B"
+
 
 # --- Date / Markdown --- #
 
