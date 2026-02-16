@@ -119,4 +119,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+site-css:
+  - "/assets/css/enter-whirlpool.css"
+
+site-js:
+  - "/assets/js/enter-whirlpool.js"
 
