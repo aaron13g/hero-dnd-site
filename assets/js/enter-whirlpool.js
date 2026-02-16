@@ -1,36 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const btn = document.querySelector('[data-enter-whirlpool]');
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.querySelector("[data-enter-chasm]");
   if (!btn) return;
 
-  const target =
-    btn.getAttribute('data-target') ||
-    `${window.location.origin}${(document.body.getAttribute('data-baseurl') || '')}/atlas/`;
+  const target = btn.getAttribute("data-target") || btn.getAttribute("href");
 
-  // Build overlay once
-  const overlay = document.createElement('div');
-  overlay.className = 'whirlpool-overlay';
-  overlay.setAttribute('aria-hidden', 'true');
-
-  const whirl = document.createElement('div');
-  whirl.className = 'whirlpool';
-  whirl.style.position = 'relative';
-
-  overlay.appendChild(whirl);
+  const overlay = document.createElement("div");
+  overlay.className = "chasm-overlay";
+  overlay.setAttribute("aria-hidden", "true");
   document.body.appendChild(overlay);
 
-  btn.addEventListener('click', function (e) {
+  btn.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
       window.location.href = target;
       return;
     }
 
-    overlay.classList.add('is-active');
+    overlay.classList.add("is-active");
+    document.body.classList.add("is-falling");
 
     window.setTimeout(() => {
       window.location.href = target;
-    }, 720);
+    }, 560);
   });
 });
