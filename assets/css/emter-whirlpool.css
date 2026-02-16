@@ -1,0 +1,71 @@
+/* Fullscreen overlay */
+.whirlpool-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(20, 17, 15, 0.88);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+  z-index: 9999;
+}
+
+/* Activate overlay */
+.whirlpool-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* The whirlpool itself */
+.whirlpool {
+  width: min(60vmin, 420px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%,
+      rgba(198,168,75,0.00) 0%,
+      rgba(198,168,75,0.10) 20%,
+      rgba(122,15,25,0.22) 45%,
+      rgba(90,11,18,0.38) 62%,
+      rgba(20,17,15,0.75) 78%,
+      rgba(20,17,15,0.95) 100%);
+  filter: drop-shadow(0 12px 30px rgba(0,0,0,0.55));
+  animation: whirl 900ms ease-in forwards;
+}
+
+/* Inner rings */
+.whirlpool::before,
+.whirlpool::after {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  border-radius: 50%;
+  background:
+    conic-gradient(from 0deg,
+      rgba(198,168,75,0.00),
+      rgba(198,168,75,0.35),
+      rgba(122,15,25,0.30),
+      rgba(198,168,75,0.00));
+  mix-blend-mode: screen;
+  animation: whirl 900ms ease-in forwards reverse;
+}
+
+.whirlpool::after {
+  inset: 22%;
+  opacity: 0.85;
+  filter: blur(1px);
+}
+
+@keyframes whirl {
+  0%   { transform: rotate(0deg) scale(0.90); }
+  60%  { transform: rotate(540deg) scale(1.02); }
+  100% { transform: rotate(900deg) scale(0.10); opacity: 0.1; }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .whirlpool, .whirlpool::before, .whirlpool::after {
+    animation: none;
+  }
+}
