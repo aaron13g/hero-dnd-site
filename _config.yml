@@ -120,8 +120,11 @@ plugins:
   - jekyll-sitemap
 
 site-css:
-  - "/assets/css/enter-whirlpool.css"
+  - "/assets/css/custom-fonts.css"
+  - "/assets/css/custom-button.css"
+  - "/assets/css/enter-transition.css"
+
 
 site-js:
-  - "/assets/js/enter-whirlpool.js"
+  - "/assets/js/enter-transition.js"
 
