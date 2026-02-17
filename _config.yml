@@ -131,6 +131,8 @@ site-css:
   - "/assets/css/logo-adjust.css"
   - "/assets/css/home-hub.css"
   - "/assets/css/npc-table.css"
+  - "/assets/css/npc-profile.css"
+
 
 
 
