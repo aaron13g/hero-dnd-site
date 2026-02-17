@@ -118,6 +118,10 @@ exclude:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+collections:
+  npcs:
+    output: true
+    permalink: /atlas/npcs/:name/
 
 site-css:
   - "/assets/css/custom-fonts.css"
@@ -132,10 +136,5 @@ site-css:
 
 site-js:
   #  - "/assets/js/enter-transition.js"
-
-  collections:
-  npcs:
-    output: true
-    permalink: /atlas/npcs/:name/
 
 
