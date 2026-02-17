@@ -1,0 +1,17 @@
+/* Increase frog wizard logo size */
+.navbar-avatar {
+  height: 90px !important;   /* adjust 80–110px as desired */
+  width: 90px !important;
+  object-fit: contain;
+}
+
+/* Lower it slightly for better visual balance */
+.navbar-avatar {
+  transform: translateY(14px);
+}
+
+/* Adjust navbar padding so it doesn't look cramped */
+.navbar {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
