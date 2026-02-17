@@ -20,6 +20,33 @@ layout: page
       <li><strong>Status:</strong> {{ page.status }}</li>
       <li><strong>Affiliation:</strong> {{ page.affiliation }}</li>
       <li><strong>First Appearance:</strong> Session {{ page.first_session }}</li>
+
+      {% if page.known_allies %}
+      <li><strong>Known Allies:</strong>
+        {% for ally_slug in page.known_allies %}
+          {% assign ally = site.npcs | where: "slug", ally_slug | first %}
+          {% if ally %}
+            <a href="{{ ally.url | relative_url }}">{{ ally.title }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            <span class="missing-npc">{{ ally_slug }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </li>
+      {% endif %}
+
+      {% if page.known_enemies %}
+      <li><strong>Known Enemies:</strong>
+        {% for enemy_slug in page.known_enemies %}
+          {% assign enemy = site.npcs | where: "slug", enemy_slug | first %}
+          {% if enemy %}
+            <a href="{{ enemy.url | relative_url }}">{{ enemy.title }}</a>{% unless forloop.last %}, {% endunless %}
+          {% else %}
+            <span class="missing-npc">{{ enemy_slug }}</span>{% unless forloop.last %}, {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </li>
+      {% endif %}
+
     </ul>
   </div>
 
@@ -28,3 +55,4 @@ layout: page
 <div class="npc-content">
   {{ content }}
 </div>
+
