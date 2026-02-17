@@ -1,25 +1,27 @@
-/* Header avatar (the frog above the title) — keep it contained */
+/* Clean, subtle header avatar */
+
 .avatar-img {
-  width: 92px !important;
-  height: 92px !important;
-  max-width: 92px !important;
-  max-height: 92px !important;
+  width: 88px !important;
+  height: 88px !important;
+  max-width: 88px !important;
+  max-height: 88px !important;
 
   border-radius: 50%;
   object-fit: cover;
 
-  /* Subtle separation, no dramatic crest effect */
-  border: 2px solid rgba(198,168,75,0.85);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.22);
+  /* subtle separation */
+  border: 2px solid #C6A84B;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 
-  /* IMPORTANT: do not push it into the navbar */
+  /* reset weird movement */
   transform: none !important;
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 18px;
+  margin-bottom: 12px;
 }
 
-/* Prevent header layout from clipping */
+/* Add breathing room so it doesn't collide with banner */
 .page-heading {
-  overflow: visible;
+  padding-top: 10px;
 }
+
 
