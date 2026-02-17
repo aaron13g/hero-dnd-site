@@ -123,6 +123,7 @@ site-css:
   - "/assets/css/custom-fonts.css"
   - "/assets/css/custom-button.css"
   - "/assets/css/enter-transition.css"
+  - "/assets/css/logo-adjust.css"
 
 
 site-js:
