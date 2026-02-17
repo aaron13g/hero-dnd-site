@@ -1,6 +1,7 @@
 ---
 layout: npc
 title: Captain Rowan
+slug: captain-rowan
 role: Captain of Neverwinter Guard
 race: Human
 alignment: Lawful Good
@@ -10,12 +11,12 @@ first_session: 3
 portrait: /assets/img/npcs/captain.jpg
 
 known_allies:
-  - Thistlemane
-  - Mila
-  - Jacob (Last Name Unknown)
+  - thistlemane
+  - mila
+  - jacob
 
 known_enemies:
-  - Cult of Karhnzun
+  - cult-of-karhnzun
 ---
 
 Captain Rowan Blackstone is the Neverwinter Guard Captain. He resides in the Citadel and has held the position for nearly a decade. At 32 years old, he began his tenure as one of the youngest captains Neverwinter has ever appointed.
