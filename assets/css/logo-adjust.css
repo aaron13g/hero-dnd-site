@@ -1,17 +1,13 @@
-/* Increase frog wizard logo size */
-.navbar-avatar {
-  height: 140px !important;   /* adjust 80–110px as desired */
-  width: 140px !important;
-  object-fit: contain;
+/* Beautiful Jekyll avatar in navbar */
+.navbar-brand img,
+.navbar-nav img,
+.avatar-img,
+#main-navbar .avatar-img {
+  height: 96px !important;
+  width: 96px !important;
+  max-height: none !important;
+  max-width: none !important;
+  object-fit: cover;
+  transform: translateY(12px);
 }
 
-/* Lower it slightly for better visual balance */
-.navbar-avatar {
-  transform: translateY(14px);
-}
-
-/* Adjust navbar padding so it doesn't look cramped */
-.navbar {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-}
