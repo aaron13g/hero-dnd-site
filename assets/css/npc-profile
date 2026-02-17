@@ -16,7 +16,7 @@
 /* Playing-card size portrait */
 .npc-portrait img {
   width: 150px;
-  height: 210px;        /* 2.5 : 3.5 ratio */
+  height: 210px; /* 2.5 : 3.5 ratio */
 
   display: block;
   object-fit: cover;
@@ -54,9 +54,30 @@
   min-width: 140px;
 }
 
-/* Main content below */
+/* Main content below with horizontal flourish divider */
 .npc-content {
-  margin-top: 28px;
+  margin-top: 40px;
+  padding-top: 28px;
+  position: relative;
+}
+
+.npc-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 2px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(168,132,30,0.9),
+    transparent
+  );
+
+  box-shadow: 0 0 6px rgba(168,132,30,0.5);
 }
 
 /* Responsive: stack cleanly on small screens */
@@ -66,11 +87,12 @@
   }
 
   .npc-portrait img {
-    width: 200px !important;
-    height: 270px !important;
+    width: 140px;
+    height: 196px;
   }
 
   .npc-meta strong {
     min-width: 120px;
   }
 }
+
