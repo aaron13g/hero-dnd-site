@@ -1,0 +1,14 @@
+h1, h2, h3, h4, .navbar-brand {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.04em;
+}
+
+body, p, li {
+  font-family: "Crimson Text", serif;
+  font-size: 1.15rem;
+}
+
+.subtitle, .page-subtitle {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
