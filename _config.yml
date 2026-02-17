@@ -126,6 +126,8 @@ site-css:
   # - "/assets/css/enter-transition.css"
   - "/assets/css/logo-adjust.css"
   - "/assets/css/home-hub.css"
+  - "/assets/css/npc-table.css"
+
 
 
 site-js:
