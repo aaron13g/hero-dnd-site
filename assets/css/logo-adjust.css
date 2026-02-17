@@ -1,7 +1,7 @@
 /* Increase frog wizard logo size */
 .navbar-avatar {
-  height: 90px !important;   /* adjust 80–110px as desired */
-  width: 90px !important;
+  height: 140px !important;   /* adjust 80–110px as desired */
+  width: 140px !important;
   object-fit: contain;
 }
 
