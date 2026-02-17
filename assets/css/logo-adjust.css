@@ -1,13 +1,9 @@
-/* Beautiful Jekyll avatar in navbar */
-.navbar-brand img,
-.navbar-nav img,
-.avatar-img,
-#main-navbar .avatar-img {
-  height: 96px !important;
-  width: 96px !important;
-  max-height: none !important;
+/* Enlarge the header avatar (frog above title) */
+.avatar-img {
+  width: 130px !important;
+  height: 130px !important;
   max-width: none !important;
-  object-fit: cover;
-  transform: translateY(12px);
+  max-height: none !important;
 }
+
 
