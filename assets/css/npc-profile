@@ -7,11 +7,12 @@
 }
 
 .npc-portrait img {
-  max-width: 300px;
-  border-radius: 14px;
-  border: 2px solid rgba(198,168,75,0.8);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
 }
+
+
 
 .npc-meta ul {
   list-style: none;
