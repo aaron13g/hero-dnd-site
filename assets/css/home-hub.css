@@ -1,0 +1,10 @@
+.hero {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
