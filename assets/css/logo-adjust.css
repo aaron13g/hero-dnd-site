@@ -1,4 +1,4 @@
-/* Header avatar (the frog above the title) — keep it contained */
+/* Header avatar (frog above title) */
 .avatar-img {
   width: 92px !important;
   height: 92px !important;
@@ -8,19 +8,17 @@
   border-radius: 50%;
   object-fit: cover;
 
-  /* Subtle separation, no dramatic crest effect */
   border: 2px solid rgba(198,168,75,0.85);
   box-shadow: 0 6px 16px rgba(0,0,0,0.22);
 
-  /* IMPORTANT: do not push it into the navbar */
+  /* micro-clarity */
+  image-rendering: -webkit-optimize-contrast;
+  filter: contrast(1.12) saturate(1.06) brightness(1.03);
+
   transform: none !important;
   margin-top: 10px;
   margin-bottom: 6px;
 }
 
-/* Prevent header layout from clipping */
-.page-heading {
-  overflow: visible;
-}
-
+.page-heading { overflow: visible; }
 
