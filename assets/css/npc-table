@@ -1,0 +1,29 @@
+.npc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 0.95rem;
+}
+
+.npc-table th {
+  background: #5A0B12;
+  color: #F4EFE6;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.npc-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.npc-table tr:hover {
+  background: rgba(198,168,75,0.08);
+}
+
+.npc-table a {
+  font-weight: 600;
+  text-decoration: none;
+}
