@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: npc
 title: NPC Directory
 ---
 
