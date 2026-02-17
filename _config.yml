@@ -125,6 +125,7 @@ site-css:
   - "/assets/css/custom-button.css"
   # - "/assets/css/enter-transition.css"
   - "/assets/css/logo-adjust.css"
+  - "/assets/css/home-hub.css"
 
 
 site-js:
