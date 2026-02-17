@@ -131,3 +131,9 @@ site-css:
 site-js:
   #  - "/assets/js/enter-transition.js"
 
+  collections:
+  npcs:
+    output: true
+    permalink: /atlas/npcs/:name/
+
+
