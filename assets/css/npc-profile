@@ -1,0 +1,28 @@
+.npc-profile {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.npc-portrait img {
+  max-width: 300px;
+  border-radius: 14px;
+  border: 2px solid rgba(198,168,75,0.8);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.npc-meta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.npc-meta li {
+  margin-bottom: 8px;
+}
+
+.npc-content {
+  margin-top: 30px;
+}
