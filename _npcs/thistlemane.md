@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: npc
 title: Thistlemane
 role: Wizard Advisor to the Citadel Never
 race: Human
