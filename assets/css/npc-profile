@@ -1,16 +1,42 @@
+/* NPC Profile Layout (portrait + stat block + content) */
+
 .npc-profile {
   display: flex;
-  gap: 40px;
-  margin-top: 30px;
+  gap: 32px;
+  margin-top: 26px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
+/* Portrait column */
+.npc-portrait {
+  flex: 0 0 auto;
+}
+
 .npc-portrait img {
-  width: 240px;
-  height: 320px;
-  object-fit: cover;
-  max-width: 100%;
+  width: 220px !important;
+  height: 300px !important;
+  max-width: none !important;
+  max-height: none !important;
+
+  display: block;
+  object-fit: cover !important;
+
+  border-radius: 14px;
+  border: 2px solid rgba(198,168,75,0.85);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+}
+
+/* Meta column */
+.npc-meta {
+  flex: 1 1 320px;
+  min-width: 280px;
+
+  background: rgba(244,239,230,0.60);
+  border: 1px solid rgba(168,132,30,0.35);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
 }
 
 .npc-meta ul {
@@ -20,9 +46,32 @@
 }
 
 .npc-meta li {
-  margin-bottom: 8px;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
 }
 
+.npc-meta strong {
+  display: inline-block;
+  min-width: 140px;
+}
+
+/* Main content below */
 .npc-content {
-  margin-top: 30px;
+  margin-top: 28px;
+}
+
+/* Responsive: stack cleanly on small screens */
+@media (max-width: 768px) {
+  .npc-profile {
+    gap: 18px;
+  }
+
+  .npc-portrait img {
+    width: 200px !important;
+    height: 270px !important;
+  }
+
+  .npc-meta strong {
+    min-width: 120px;
+  }
 }
