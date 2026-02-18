@@ -11,7 +11,7 @@ background: Charlatan
 affiliation: (Optional)
 status: Alive
 first_session: 6
-portrait: /assets/img/pcs/iko-avatar.png
+portrait: /assets/img/iko-avatar.png
 known_allies:
   - vex-shadowgrin
   - serafina
