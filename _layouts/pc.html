@@ -2,21 +2,23 @@
 layout: page
 ---
 
-<div class="npc-profile">
+<div class="pc-profile">
 
   {% if page.portrait %}
-    <div class="npc-portrait">
+    <div class="pc-portrait">
       <img src="{{ page.portrait | relative_url }}"
            alt="{{ page.title }} portrait">
     </div>
   {% endif %}
 
-  <div class="npc-meta">
+  <div class="pc-meta">
     <ul>
-      {% if page.role %}<li><strong>Role:</strong> {{ page.role }}</li>{% endif %}
+      {% if page.player %}<li><strong>Player:</strong> {{ page.player }}</li>{% endif %}
+      {% if page.class %}<li><strong>Class:</strong> {{ page.class }}</li>{% endif %}
+      {% if page.level %}<li><strong>Level:</strong> {{ page.level }}</li>{% endif %}
       {% if page.race %}<li><strong>Race:</strong> {{ page.race }}</li>{% endif %}
+      {% if page.background %}<li><strong>Background:</strong> {{ page.background }}</li>{% endif %}
       {% if page.alignment %}<li><strong>Alignment:</strong> {{ page.alignment }}</li>{% endif %}
-      {% if page.status %}<li><strong>Status:</strong> {{ page.status }}</li>{% endif %}
       {% if page.affiliation %}<li><strong>Affiliation:</strong> {{ page.affiliation }}</li>{% endif %}
       {% if page.first_session %}<li><strong>First Appearance:</strong> Session {{ page.first_session }}</li>{% endif %}
     </ul>
@@ -24,6 +26,6 @@ layout: page
 
 </div>
 
-<div class="npc-content">
+<div class="pc-content">
   {{ content }}
 </div>
