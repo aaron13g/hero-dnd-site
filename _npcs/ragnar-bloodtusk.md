@@ -7,7 +7,7 @@ race: Half-Orc
 alignment: Chaotic Good
 status: Alive
 affiliation: The Party
-first_session: TBD
+first_session: 6
 portrait: /assets/img/npcs/ragnar.jpg
 
 known_allies:
