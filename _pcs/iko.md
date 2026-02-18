@@ -14,7 +14,7 @@ first_session: 6
 portrait: /assets/img/iko-avatar.png
 known_allies:
   - vex-shadowgrin
-  - serafina
+  - -serafina
   - thaldrin
   - dragneel
   - mila
