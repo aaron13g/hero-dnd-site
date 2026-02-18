@@ -11,7 +11,7 @@ background: (Background)
 affiliation: (Optional)
 status: Alive
 first_session: 1
-portrait: /assets/img/pcs/serafina.jpg
+portrait: /assets/img/serafina.jpg
 known_allies:
   - none
 known_enemies:
