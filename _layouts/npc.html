@@ -2,16 +2,13 @@
 layout: page
 ---
 <!-- NPC_LAYOUT_ACTIVE -->
-
 <div class="npc-profile">
-
   {% if page.portrait %}
     <div class="npc-portrait">
       <img src="{{ page.portrait | relative_url }}"
            alt="{{ page.title }} portrait">
     </div>
   {% endif %}
-
   <div class="npc-meta">
     <ul>
       <li><strong>Role:</strong> {{ page.role }}</li>
@@ -20,11 +17,13 @@ layout: page
       <li><strong>Status:</strong> {{ page.status }}</li>
       <li><strong>Affiliation:</strong> {{ page.affiliation }}</li>
       <li><strong>First Appearance:</strong> Session {{ page.first_session }}</li>
-
       {% if page.known_allies %}
       <li><strong>Known Allies:</strong>
         {% for ally_slug in page.known_allies %}
           {% assign ally = site.npcs | where: "slug", ally_slug | first %}
+          {% unless ally %}
+            {% assign ally = site.pcs | where: "slug", ally_slug | first %}
+          {% endunless %}
           {% if ally %}
             <a href="{{ ally.url | relative_url }}">{{ ally.title }}</a>{% unless forloop.last %}, {% endunless %}
           {% else %}
@@ -33,11 +32,13 @@ layout: page
         {% endfor %}
       </li>
       {% endif %}
-
       {% if page.known_enemies %}
       <li><strong>Known Enemies:</strong>
         {% for enemy_slug in page.known_enemies %}
           {% assign enemy = site.npcs | where: "slug", enemy_slug | first %}
+          {% unless enemy %}
+            {% assign enemy = site.pcs | where: "slug", enemy_slug | first %}
+          {% endunless %}
           {% if enemy %}
             <a href="{{ enemy.url | relative_url }}">{{ enemy.title }}</a>{% unless forloop.last %}, {% endunless %}
           {% else %}
@@ -46,13 +47,9 @@ layout: page
         {% endfor %}
       </li>
       {% endif %}
-
     </ul>
   </div>
-
 </div>
-
 <div class="npc-content">
   {{ content }}
 </div>
-
