@@ -1,17 +1,22 @@
+/* Header avatar */
 .avatar-img {
   width: 92px !important;
   height: 92px !important;
   max-width: 92px !important;
   max-height: 92px !important;
-
   border-radius: 50%;
   object-fit: cover;
   object-position: center center;
-
   border: 2px solid rgba(198,168,75,0.85);
   box-shadow: 0 6px 16px rgba(0,0,0,0.22);
-
   filter: contrast(1.12) saturate(1.06) brightness(1.03);
   margin-top: 10px;
   margin-bottom: 6px;
+}
+
+/* Remove white backing shape behind avatar */
+.avatar-container {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
