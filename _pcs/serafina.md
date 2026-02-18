@@ -1,34 +1,42 @@
 ---
 layout: pc
 title: Serafina
+slug: serafina
 player: Krissy
 class: Cleric
 level: 4
 race: Elf
-background: (Background)
 alignment: Neutral Good
+background: (Background)
 affiliation: (Optional)
+status: Alive
 first_session: 1
 portrait: /assets/img/pcs/serafina.jpg
+known_allies:
+  - none
+known_enemies:
+  - none
 ---
 
-## Snapshot
-One-paragraph “who they are” summary.
+One-paragraph summary for the wiki.
+
+## Notable Details
+- 
+- 
 
 ## Party Role
 How they tend to contribute in and out of combat.
 
 ## Backstory (Public)
-What other PCs/NPCs would plausibly know.
+What other PCs and NPCs would plausibly know.
 
-## Secrets (DM-only)
-Put DM-only notes behind a collapsible block:
-
+## Secrets (DM Only)
 <details>
   <summary><strong>DM Notes</strong></summary>
 
-  - Secret #1  
-  - Secret #2  
+  - 
+  - 
+
 </details>
 
 ## Bonds
