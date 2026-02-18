@@ -1,0 +1,28 @@
+---
+layout: npc
+title: "Name"
+slug: "name-slug"
+role: "Role"
+race: "Race"
+alignment: "Alignment"
+status: "Alive"
+affiliation: "Affiliation"
+first_session: 1
+portrait: /assets/img/npcs/placeholder.jpg
+
+known_allies:
+  - none
+
+known_enemies:
+  - none
+---
+
+One-paragraph summary for the wiki.
+
+## Notable Details
+- 
+- 
+
+## Secrets (DM Only)
+- 
+- 
