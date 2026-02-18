@@ -23,6 +23,7 @@ navbar-links:
     - Atlas Home: "atlas/"
     - Sessions: "atlas/sessions"
     - NPCs: "atlas/npcs"
+    - PCS: "atlas/pcs"
     - Locations: "atlas/locations"
     - Factions: "atlas/factions"
     - Rules: "atlas/rules"
