@@ -1,6 +1,7 @@
 ---
 layout: page
 title: NPC Directory
+permalink: /atlas/npcs/
 ---
 
 <table class="npc-table">
