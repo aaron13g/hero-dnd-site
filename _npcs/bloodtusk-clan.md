@@ -7,7 +7,7 @@ race: Half-Orc
 alignment: Lawful Neutral
 status: Scattered
 affiliation: Independent
-first_session: TBD
+first_session: 6
 portrait: /assets/img/npcs/bloodtusk-clan.jpg
 
 known_allies:
