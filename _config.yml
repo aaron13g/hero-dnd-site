@@ -123,6 +123,9 @@ collections:
   npcs:
     output: true
     permalink: /atlas/npcs/:name/
+  pcs:
+    output: true
+    permalink: /atlas/pcs/:name/
   factions:
     output: true
     permalink: /atlas/factions/:name/
