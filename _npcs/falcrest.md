@@ -20,7 +20,7 @@ known_enemies:
   - serafina
   - ragnar
   - thaldrin
-  - half-orc tribes
+  - bloodtusk-clan
   - harpers
 ---
 
