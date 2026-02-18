@@ -30,14 +30,7 @@ How they tend to contribute in and out of combat.
 ## Backstory (Public)
 What other PCs and NPCs would plausibly know.
 
-## Secrets (DM Only)
-<details>
-  <summary><strong>DM Notes</strong></summary>
 
-  - 
-  - 
-
-</details>
 
 ## Bonds
 - Ally:
