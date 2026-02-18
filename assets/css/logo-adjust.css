@@ -1,9 +1,11 @@
 /* Header avatar */
 .avatar-img {
-  width: 52px !important;
-  height: 52px !important;
+  width: 4vw !important;
+  height: 4vw !important;
   max-width: 52px !important;
   max-height: 52px !important;
+  min-width: 32px !important;
+  min-height: 32px !important;
   border-radius: 50%;
   object-fit: cover;
   object-position: center center;
