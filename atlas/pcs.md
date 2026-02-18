@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Player Characters
-permalink: /pcs/
+permalink: /atlas/pcs/
 ---
 
 # Player Characters
 
 <ul>
-{% assign pcs = site.pages | where: "layout", "pc" | sort: "title" %}
+{% assign pcs = site.pcs | sort: "title" %}
 {% for pc in pcs %}
   <li>
     <a href="{{ pc.url | relative_url }}"><strong>{{ pc.title }}</strong></a>
