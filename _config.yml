@@ -122,6 +122,21 @@ collections:
   npcs:
     output: true
     permalink: /atlas/npcs/:name/
+  factions:
+    output: true
+    permalink: /atlas/factions/:name/
+  locations:
+    output: true
+    permalink: /atlas/locations/:name/
+  sessions:
+    output: true
+    permalink: /atlas/sessions/:name/
+  items:
+    output: true
+    permalink: /atlas/items/:name/
+  events:
+    output: true
+    permalink: /atlas/events/:name/
 
 site-css:
   - "/assets/css/custom-fonts.css"
