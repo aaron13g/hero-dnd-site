@@ -2,6 +2,7 @@
 layout: page
 title: Atlas Home
 subtitle: StoneBound Fate campaign reference
+permalink: /atlas/
 ---
 
 <ul>
