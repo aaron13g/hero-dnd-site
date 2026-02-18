@@ -1,7 +1,7 @@
 ---
 layout: npc
 title: Lord Dain Falcrest
-slug: lord-dain-falcrest
+slug: falcrest
 role: Diplomat
 race: Human
 alignment: Neutral Evil
