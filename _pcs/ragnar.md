@@ -5,13 +5,13 @@ slug: ragnar-bloodtusk
 player: Ryan
 class: Barbarian
 level: 4
-race: Hafl-Orc
+race: Half-Orc
 alignment: Chaotic Good
 background: Boxer/brawler
 affiliation: The Party
 status: Alive
 first_session: 6
-portrait: /assets/img/pcs/ragnar.png
+portrait: /assets/img/pcs/ragnar.jpg
 known_allies:
   - bloodtusk-clan
   - the-party
