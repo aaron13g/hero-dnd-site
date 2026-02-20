@@ -11,7 +11,7 @@ background: Boxer/brawler
 affiliation: The Party
 status: Alive
 first_session: 6
-portrait: /assets/img/pcs/ragnar.jpg
+portrait: /assets/img/pc/ragnar.jpg
 known_allies:
   - bloodtusk-clan
   - the-party
