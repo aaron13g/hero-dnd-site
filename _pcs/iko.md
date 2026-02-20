@@ -10,7 +10,7 @@ alignment: Lawful Good
 background: Charlatan
 affiliation: (Optional)
 status: Alive
-first_session: 6
+first_session: 7
 portrait: /assets/img/iko-avatar.png
 known_allies:
   - vex-shadowgrin
