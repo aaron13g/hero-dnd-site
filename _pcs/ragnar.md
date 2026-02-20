@@ -1,19 +1,23 @@
 ---
-layout: npc
+layout: pc
 title: Ragnar Bloodtusk
 slug: ragnar-bloodtusk
-role: Fighter / Boxer
-race: Half-Orc
+player: Ryan
+class: Barbarian
+level: 4
+race: Hafl-Orc
 alignment: Chaotic Good
-status: Alive
+background: Boxer/brawler
 affiliation: The Party
+status: Alive
 first_session: 6
-portrait: /assets/img/npcs/ragnar.jpg
-
+portrait: /assets/img/pcs/ragnar.png
 known_allies:
   - bloodtusk-clan
   - the-party
-
+  - serafina
+  - thaldrin
+  - mila
 known_enemies:
   - lord-dain-falcrest
   - cult-of-karhnzun
